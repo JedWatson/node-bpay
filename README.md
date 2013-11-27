@@ -5,6 +5,10 @@ Node.JS BPAY Customer Reference Number Generator and Validator.
 
 Also includes helpful methods for dealing with Luhn Check Digits.
 
+See http://www.bpay.com.au/Business/Small-Medium-Business/Help/BPAY-Services-FAQs.aspx
+
+and http://en.wikipedia.org/wiki/Luhn_algorithm
+
 
 ## Usage
 
@@ -23,8 +27,6 @@ Also includes helpful methods for dealing with Luhn Check Digits.
 Generates a valid BPay Customer Reference Number.
 
 A BPay CRN is a 2-20 digit number with the last digit a luhn check digit.
-
-See http://www.bpay.com.au/Business/Small-Medium-Business/Help/BPAY-Services-FAQs.aspx
 
 #### Arguments:
 
