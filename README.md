@@ -16,9 +16,9 @@ Also includes helpful methods for dealing with Luhn Check Digits.
 	var crn = bpay.generateBpayCRN(10); // generates a valid 10 digit CRN
 	console.log(bpay.validateBpayCRN(crn)); // true!
 
-# Methods
+## Methods
 
-## `generateBpayCRN(len, prefix)`
+### `generateBpayCRN(len, prefix)`
 
 Generates a valid BPay Customer Reference Number.
 
@@ -26,24 +26,52 @@ A BPay CRN is a 2-20 digit number with the last digit a luhn check digit.
 
 See http://www.bpay.com.au/Business/Small-Medium-Business/Help/BPAY-Services-FAQs.aspx
 
-### Arguments:
+#### Arguments:
 
 * `len` (`String` or `Number`) - Length of number to generate (defaults to 10)
 * `prefix` (`String` or `Number`) - Prefix to use (optional)
 
-### Returns:
+#### Returns:
 
 * `String` - The new CRN
 
 
-## `validateBpayCRN(input)`
+### `validateBpayCRN(input)`
 
 Validates a BPay Customer Reference Number.
 
-### Arguments:
+#### Arguments:
 
 * `input` (`String` or `Number`) - The CRN to validate
 
-### Returns:
+#### Returns:
 
-* `Boolean` - Whether the new CRN is valid
+* `Boolean` - Whether the CRN is valid
+
+
+### `getLuhnCheckDigit(input)`
+
+Calculates the Luhn check digit for the input.
+
+#### Arguments:
+
+* `input` (`String` or `Number`) - The input to generate a check digit for
+
+#### Returns:
+
+* `String` - The check digit
+
+
+
+### `validateLuhnCheckDigit(input)`
+
+Validates the Luhn check digit in the input.
+
+#### Arguments:
+
+* `input` (`String` or `Number`) - The input to validate
+
+#### Returns:
+
+* `Boolean` - Whether the check digit is valid
+
