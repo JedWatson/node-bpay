@@ -1,0 +1,26 @@
+{
+  "name": "bpay",
+  "version": "0.1.0",
+  "description": "BPAY Customer Reference Number Generator and Validator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JedWatson/node-bpay.git"
+  },
+  "keywords": [
+    "bpay",
+    "luhn",
+    "generator",
+    "validator"
+  ],
+  "author": "Jed Watson",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "gitHead": "122f96ff78cab1f37e84c6242f4143875efffc12",
+  "bugs": {
+    "url": "https://github.com/JedWatson/node-bpay/issues"
+  }
+}
