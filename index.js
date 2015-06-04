@@ -97,6 +97,6 @@ var validateBpayCRN = exports.validateBpayCRN = function(input) {
 	
 	input = String(input);
 	
-	return (input.length == 10 && validateLuhnCheckDigit(input));
+	return (input.length >= 2 && input.length <= 20 && validateLuhnCheckDigit(input));
 	
 }
